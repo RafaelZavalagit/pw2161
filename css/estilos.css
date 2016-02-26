@@ -14,19 +14,28 @@ body header 	/*Siempre se afecta a la ultima ruta, o la mas a la derecha*/
 	border-radius: 15px;  /*Esquinas */
 	color:white ;
 	text-align: center;
+	box-shadow: -5px -10px black;
+}
+body header img{
+	width: 80px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 body header h1 
 {
 	text-align: center;
+	text-shadow:5px 5px 5px black;
 }
 header nav ul li
 {
 	display:inline-block; /* Se rompe el modelo de caja, para que las opciones salgan en un solo renglon	*/
+	background: white;
 	border:1px solid yellow;
 	border-radius: 5px;
-	background: white;
+	box-shadow: 5px 7px gray;
 	color: black;
-	margin:0 80px 0 0;
+	margin:0 30px 0 0;
 	padding: 5px;
 	text-align: center;
 }
@@ -34,4 +43,16 @@ header nav ul li:hover
 {
 	background: black;
 	color: white;
+}
+/*Aqui van los Id's*/
+#seccion1 
+{
+	border: 10px solid red;
+}
+#seccion1 article
+{
+	border:10px solid black;
+	display:inline-block;
+	width: 47.8%;
+	vertical-align: top;
 }
