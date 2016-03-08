@@ -6,6 +6,7 @@ body
 	margin: 5px 2px 10px 50px; 
 	padding: 10px 2px 10px 50px;
 
+
 }
 body header 	/*Siempre se afecta a la ultima ruta, o la mas a la derecha*/
 {		/* Siempre intentar poner en Orden Alfabetico las etiquetas y los atributos*/
@@ -15,17 +16,21 @@ body header 	/*Siempre se afecta a la ultima ruta, o la mas a la derecha*/
 	color:white ;
 	text-align: center;
 	box-shadow: -5px -10px black;
+	font-family: 'Lobster Two', serif;
 }
 body header img{
 	width: 80px;
 	float: right;
 	margin-right: 20px;
 	margin-top: 20px;
+	font-family: 'Volkhov', serif;
 }
 body header h1 
 {
 	text-align: center;
 	text-shadow:5px 5px 5px black;
+	font-family: 'Caudex', serif;
+	color:yellow;
 }
 header nav ul li
 {
@@ -38,6 +43,7 @@ header nav ul li
 	margin:0 30px 0 0;
 	padding: 5px;
 	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
 }
 header nav ul li:hover
 {
@@ -49,11 +55,17 @@ header nav ul li:hover
 {
 	border: 10px solid red;
 }
+#seccion1 article h2
+{
+	font-family: 'Lobster Two', cursive;
+}
+
 #seccion1 article
 {
 	border:10px solid black;
 	display:inline-block;
 	width: 47.8%;
 	vertical-align: top;
-	i
+
+	font-family: 'Kanit', sans-serif;
 }
