@@ -1,0 +1,33 @@
+body
+{
+	
+}
+
+body tr td
+{
+	padding:50px 0px 50px 0px;
+}
+body form input[type="button"]
+{
+	max-height: 200px;
+	width: 100px;
+
+}
+
+table{
+	border-collapse: collapse;
+}
+#s1 td
+{
+	border-bottom: 3px solid red;
+}
+
+#s2 td
+{
+	border-bottom: 3px solid red;
+}
+
+.c1
+{
+	border-right: 3px solid red;
+}
