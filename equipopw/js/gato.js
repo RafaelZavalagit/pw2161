@@ -28,62 +28,71 @@ function ganadores(id1,id2,id3) //  para cambiar los colores de los botones de g
 }
 function checar()
 {
+	var ganador=false;
 	if(contador>=5)
 	{
-		if((document.getElementById('s11').value==document.getElementById('s12').value)&&(document.getElementById('s12').value==document.getElementById('s13').value)&&document.getElementById('s11').value!="")
+		if((document.getElementById('s11').value==document.getElementById('s12').value)&&(document.getElementById('s12').value==document.getElementById('s13').value)&&document.getElementById('s11').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s11').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 			
 
 		}
-		if((document.getElementById('s21').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s23').value)&&document.getElementById('s21').value!="")
+		if((document.getElementById('s21').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s23').value)&&document.getElementById('s21').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s21').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s31').value==document.getElementById('s32').value)&&(document.getElementById('s32').value==document.getElementById('s33').value)&&document.getElementById('s31').value!="")
+		if((document.getElementById('s31').value==document.getElementById('s32').value)&&(document.getElementById('s32').value==document.getElementById('s33').value)&&document.getElementById('s31').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s31').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s11').value==document.getElementById('s21').value)&&(document.getElementById('s21').value==document.getElementById('s31').value)&&document.getElementById('s11').value!="")
+		if((document.getElementById('s11').value==document.getElementById('s21').value)&&(document.getElementById('s21').value==document.getElementById('s31').value)&&document.getElementById('s11').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s11').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s12').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s32').value)&&document.getElementById('s22').value!="")
+		if((document.getElementById('s12').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s32').value)&&document.getElementById('s22').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s22').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s13').value==document.getElementById('s23').value)&&(document.getElementById('s23').value==document.getElementById('s33').value)&&document.getElementById('s33').value!="")
+		if((document.getElementById('s13').value==document.getElementById('s23').value)&&(document.getElementById('s23').value==document.getElementById('s33').value)&&document.getElementById('s33').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s33').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s11').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s33').value)&&document.getElementById('s11').value!="")
+		if((document.getElementById('s11').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s33').value)&&document.getElementById('s11').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s11').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
-		if((document.getElementById('s31').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s13').value)&&document.getElementById('s13').value!="")
+		if((document.getElementById('s31').value==document.getElementById('s22').value)&&(document.getElementById('s22').value==document.getElementById('s13').value)&&document.getElementById('s13').value!=""&&ganador==false)
 		{
 			alert("El jugador con "+document.getElementById('s13').value+" es el Ganador");
 			location.reload();
+			ganador=true;
 			contador=0;
 
 		}
