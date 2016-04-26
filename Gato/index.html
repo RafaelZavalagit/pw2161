@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/estilosGato.css">
 	<script src="js/gato.js"></script>
 </head>
-<body>
+<body onLoad="iniciaGato();">
 	<header>
 		<h1 id="tituloJuego">Juego del Gato</h1>
 	</header>
@@ -32,7 +32,11 @@
 				</table>
 			</form>
 		</article>
+		<article>
+			<input type="button" value="refresh" id="btnRecarga" onclick="Recargar();">
+		</article>
 	</section>
+	
 		
 	
 </body>

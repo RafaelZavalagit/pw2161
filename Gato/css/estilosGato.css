@@ -34,3 +34,12 @@ section article table td
 {
 	border-right:8px solid red;
 }
+#btnRecarga
+{
+	margin-top:20px;
+	margin-left: 300px;
+	border-radius: 10px;
+	font-size: 2em;
+	background-color: red;
+	color:white;
+}
