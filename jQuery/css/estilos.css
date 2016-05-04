@@ -1,0 +1,44 @@
+body
+{
+	margin: 0 auto;
+	max-width: 1024px;
+	background-color: solid gray;
+}
+h2
+{
+	text-align: center;
+}
+article
+{
+	
+	background-color: #F0FFF0;
+	border: 3px solid black;
+	border-style: dotted;
+	border-radius: 3px;
+	font-family:tahoma;
+	max-width: 350px;
+	text-align: center;
+	padding: 40px 20px 40px 20px;
+	margin-left: 300px;
+}
+#fotoPersona{
+	width:300px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	border:2px solid gray;
+	border-radius: 10px;
+	background-color: white;
+}
+#txtNombreUser
+{
+	font-size: 2em;
+}
+#txtApellidoUser
+{
+	font-size: 2em;
+	padding:20px 0px 20px 0px;
+}
+#miBoton{
+	background-color: black;
+	color:white;
+}
