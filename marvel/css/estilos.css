@@ -1,0 +1,42 @@
+body
+{
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+body h1
+{
+	text-align: center;
+}
+
+body article input
+{
+	margin-left: 34%;
+	font-size: 1.5em;
+}
+
+body article div
+{
+	padding-top: 20px;
+}
+
+body article div button
+{
+	margin-left: 44%;
+	font-size: 1.5em;
+}
+
+body table
+{
+	padding-bottom: 20px;
+}
+
+.titulos
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 20px 20px 20px 0px;
+}
