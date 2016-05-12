@@ -20,6 +20,9 @@ var iniciaApp = function()
 			$("#txtClave").focus();
 		}
 
+
+
+		/*
 		if(usuario =="pw" && clave == "1234")
 		{
 			alert("Bienvenido "+ usuario);
@@ -28,6 +31,30 @@ var iniciaApp = function()
 		}else{
 			alert("Usuario y/o contraseña incorrectos!!");
 		}
+		*/
+
+		//Verificar usuario y contraseña.
+
+		var parametros= "accion=calidaEntrada"+
+					"&usuario="+usuario+
+					"&calve="+clave;
+		$.ajax({
+			beforeSend:function(){
+				//Validar al usuario
+				console.log("Validar al usuario");
+			}
+			cache: false,
+			type: "POST",
+			dataType:"json",
+			url:"php/funciones.php",
+			data: parametros,
+			success: function(response){
+				
+			},
+			error:function(xhr,ajaxOptions, thrownError){
+				console.log("Algo salio mal");
+			}
+		});
 		console.log("Se disparó el submit");
 	}
 	$("#frmValidaEntrada").on("submit",validaEntrada);
