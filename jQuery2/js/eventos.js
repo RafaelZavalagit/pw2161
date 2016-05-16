@@ -35,21 +35,26 @@ var iniciaApp = function()
 
 		//Verificar usuario y contraseña.
 
-		var parametros= "accion=calidaEntrada"+
+		var parametros= "accion=validaEntrada"+
 					"&usuario="+usuario+
-					"&calve="+clave;
+					"&clave="+clave;
 		$.ajax({
 			beforeSend:function(){
 				//Validar al usuario
 				console.log("Validar al usuario");
-			}
+			},
 			cache: false,
 			type: "POST",
 			dataType:"json",
 			url:"php/funciones.php",
 			data: parametros,
 			success: function(response){
-				
+				if(response.respuesta == true )
+				{
+					$("#datosUsuario").hide();
+					$("nav").show("slow");
+				}else
+				 	alert("Usuario/Clave incorrectos!! ");
 			},
 			error:function(xhr,ajaxOptions, thrownError){
 				console.log("Algo salio mal");
