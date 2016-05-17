@@ -31,12 +31,27 @@
 				  </article>
 				  <article class="panel-body">
 				    <form action="#" id="frmValidaEntrada">
-				    	<input type="text" id="txtUsuario" requiered placeholder="Usuario" class="form-control" autofocus>
+				    	<input type="text"  id="txtUsuario" requiered placeholder="Usuario" class="form-control" autofocus>
 				    	<input type="password" id="txtClave" requiered placeholder="Contraseña" class="form-control">
 				    	<input type="submit" class="btn btn-success btn-lg btn-block" value="Entrar">
 				    </form>
 				  </article>
 				</article>	
+			</article>
+		</section>
+		<section>
+			<article id="#altaUsuarios">
+				<h2>Alta de Usuarios</h2>
+				<form action="#" id="frmAltaUsuarios">
+					<input type="text" class"form-control" name="txtNombreUsuario"id="txtNombreUsuario" placeholder="Usuario"required>
+					<input type="password" class"form-control" name="txtClaveUsuario" id="txtClaveUsuario" placeholder="Clave"required>
+					<select name="txtTipoUsuario" id="txtTipoUsuario" class="form-control">
+						<option value="vigente">Vigente</option>
+						<option value="baja">Baja</option>
+					</select>
+					<input type="text" class="form-control"id="txtDepartamento" name="txtDepartamento" placeholder="Departamento" required>
+					<input type="submit" class="btn btn-succes btn-lg btn-block" id="btnAltaUsuario" name ="btnAltaUsuario" text="">
+				</form>
 			</article>
 		</section>
 	</main>

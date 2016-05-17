@@ -1,39 +1,5 @@
 <?php 
 
-
-function validaEntrada()
-{
-	$usuario = GetSQLValueString($_POST["usuario"],"text");
-	$clave = GetSQLValueString($_POST["clave"],"text");
-	$respuesta= false;
-	//conectar el servidor de BD
-	//servidor , usuario , clave 
-	$conexion = mysql_connect("localhost","root","")
-	//seleccionar la BD
-	mysql_select_db("cursopw");
-	$validar = sprintf( "select usuario,clave from usuarios where usuario=%s and clave=%s limit 1")$usuario,$clave ;
-	$resultado= mysql_query($validar);
-	//preguntar si trajo al menos un registro
-	if(mysql_num_rows($resultado) > 0)
-		$respuesta= true;
-	$salidaJSON = array('respuesta' => $respuesta );
-	//devolvemos el resultado a JavaScript
-	print json_encode($salidaJSON);
-}
-
-$ accion = $_POST["accion"];
-//menu principal
-
-switch ($ accion) {
-	case 'validaEntrada':
-		validaEntrada();		# code...
-		break;
-	
-	default:
-		# code...
-		break;
-}
-
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -61,4 +27,38 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   return $theValue;
 }
 
-?>
+function validaEntrada()
+{
+	$usuario = GetSQLValueString($_POST["usuario"],"text");
+	$clave = GetSQLValueString(md5($_POST["clave"]),"text");
+	$respuesta = false;
+
+	//conectar el servidor de BD
+	//servidor , usuario , clave 
+	$conexion = mysql_connect("localhost","root","");
+	//seleccionar la BD
+	mysql_select_db("cursopw");
+	$validar = sprintf( "select usuario,clave from usuarios where usuario=%s and clave=%s limit 1",$usuario,$clave) ;
+	$resultado= mysql_query($validar);
+	//preguntar si trajo al menos un registro
+	if(mysql_num_rows($resultado) > 0){
+		$respuesta = true;
+	}
+		
+	$salidaJSON = array('respuesta' => $respuesta );
+	//devolvemos el resultado a JavaScript
+	print json_encode($salidaJSON);
+}
+
+$accion = $_POST["accion"];
+//menu principal
+
+switch ($accion) {
+	case 'validaEntrada':
+		validaEntrada();		//# code...
+		break;
+	
+	default:
+		# code...
+		break;
+}
