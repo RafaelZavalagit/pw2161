@@ -24,3 +24,9 @@ header nav ul li button
 	margin: 0 auto;
 	width: 320px;
 }
+#altaUsuarios
+{
+	display: none; 
+	margin: 0 auto;
+	width: 320px;
+}
