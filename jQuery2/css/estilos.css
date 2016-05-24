@@ -24,9 +24,10 @@ header nav ul li button
 	margin: 0 auto;
 	width: 320px;
 }
-#altaUsuarios
+#altaUsuarios, #consultaUsuarios
 {
 	display: none; 
 	margin: 0 auto;
 	width: 320px;
 }
+
